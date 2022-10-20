@@ -1,35 +1,21 @@
-let input = document.querySelector(".input");//返回第一个匹配的标签
-let run = document.querySelector("button");
-let output = document.querySelector("pre");
+let a = [1, 2, "a", "yxc"];
 
+let b = [
+    1,  // 变量
+    "yxc",  // 变量
+    ['a', 'b', 3],  // 数组
+    function () {  // 函数
+        console.log("Hello World");
+    },
+    { name: "yxc", age: 18 }  // 对象
+];
 
-
-
-function main() {
-    run.addEventListener("click", function (){
-
-        let score = parseInt(input.value);
-        let res;
-        if (score>= 85){
-            res ="A";
-        }
-        else if(score>=70){
-            res = "B";
-        }
-        else if(score>=60){
-            res = "C";
-        }
-        else{
-            res = "D"
-        }
-
-        output.innerHTML = res;
-
-
-    });
+let main = function() {
+    console.log(b[2][1])
+    console.log(b[1])
+    console.log(b[3]())
 
 }
-
 
 export {
     main
