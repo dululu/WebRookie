@@ -1,0 +1,8 @@
+html
+用vscode打开
+tab补全
+CTRL+/ 注释一行
+！+ tab  html 基本结构 
+css
+CTRL+/ 多行注释
+
