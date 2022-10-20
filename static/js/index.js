@@ -1,12 +1,13 @@
-let div = document.querySelector('div')
 
 
 let main = function() {
-    div.addEventListener('contextmenu',function(event)
-    {
-        console.log(event.type);
-    });
-}
+    let $div = $('div');
+    $div.on('click',function() {
+        console.log("click div")
+        $div.off('click');
+    })
+    
+};
 
 export {
     main
